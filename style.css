@@ -1,0 +1,117 @@
+:root{
+  --bg: #0b0c10;
+  --card: #12141b;
+  --text: #e8eaf0;
+  --muted: #b7bdcc;
+  --line: rgba(255,255,255,.08);
+  --accent: #7c5cff;
+}
+
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 700px at 20% -10%, rgba(124,92,255,.25), transparent 60%),
+              radial-gradient(900px 600px at 90% 10%, rgba(0,180,255,.18), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.container{
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header{
+  padding: 28px 0 18px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(0,0,0,.20);
+  backdrop-filter: blur(10px);
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(0,180,255,.75));
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+h1{
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: .2px;
+}
+.sub{
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.meta{
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.dot{ margin: 0 10px; opacity: .6; }
+
+main{ padding: 22px 0 40px; }
+
+.card{
+  background: rgba(18,20,27,.86);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 18px;
+  margin: 14px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+h2{
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+h3{
+  margin: 14px 0 6px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: .95;
+}
+
+p{ margin: 10px 0; color: var(--text); }
+.note{
+  color: var(--muted);
+  border-left: 3px solid rgba(124,92,255,.7);
+  padding-left: 12px;
+}
+
+ul{
+  margin: 8px 0 10px 18px;
+  color: var(--text);
+}
+li{ margin: 6px 0; color: var(--text); }
+
+a{
+  color: #cbbdff;
+  text-decoration: none;
+}
+a:hover{ text-decoration: underline; }
+
+.site-footer{
+  padding-top: 10px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  opacity: .9;
+}
